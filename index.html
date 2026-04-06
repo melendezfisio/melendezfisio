@@ -1008,7 +1008,7 @@
     function validateFull() {
       const d = getFormData();
       if (!d.nombre) { showStatus('error', '⚠', 'Por favor, añade tu nombre.'); return false; }
-      if (!d.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(d.email)) {
+      if (!d.correo || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(d.correo)) {
         showStatus('error', '⚠', 'El email no parece válido.'); return false;
       }
       return true;
